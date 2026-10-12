@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حكايا الهدى | قصص إسلامية مصوّرة للأطفال والأسرة</title>
+  
+  <!-- بيانات التعريف ومحركات البحث (SEO) -->
+  <meta name="description" content="موقع حكايا الهدى: مساحة عائلية لقراءة القصص الإسلامية المصوّرة والاستماع إليها مع الأطفال، متخصصة في السيرة النبوية وقصص الصحابة والقيم والأخلاق.">
+  <meta name="keywords" content="حكايا الهدى, قصص أطفال إسلامية, السيرة النبوية للأطفال, قصص الصحابة, قصص مصورة, حكايات قبل النوم, قصص صوتية للأطفال">
+  <meta name="author" content="حكايا الهدى">
+  
+  <!-- أنماط التصميم والخطوط -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+</head>
+<body>
+
+  <!-- شريط التنقل العلوي -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <!-- الشعار واسم الموقع -->
+      <a href="#" class="brand-link" title="الصفحة الرئيسية - حكايا الهدى">
+        <img src="assets/images/logo.svg" alt="شعار حكايا الهدى" class="brand-logo-img">
+      </a>
+
+      <!-- القائمة الرئيسية -->
+      <nav class="main-navigation" id="mainNavigation" aria-label="القائمة الرئيسية">
+        <ul>
+          <li><a href="#heroSection" class="nav-item-link active">الرئيسية</a></li>
+          <li><a href="#categoriesSection" class="nav-item-link">أقسام القصص</a></li>
+          <li><a href="#storiesSection" class="nav-item-link">مكتبة الحكايات</a></li>
+          <li><a href="#featuredSection" class="nav-item-link">قصة اليوم</a></li>
+          <li><a href="#valuesSection" class="nav-item-link">قيمنا وأهدافنا</a></li>
+        </ul>
+      </nav>
+
+      <!-- الإجراءات السريعة وأزرار التفاعل -->
+      <div class="nav-actions">
+        <a href="#storiesSection" class="btn-pill btn-primary">
+          <span>🌟</span> استكشف الحكايات
+        </a>
+        <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="فتح القائمة الرئيسية" title="القائمة">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- القسم الترحيبي الرئيسي (Hero Banner) -->
+  <section class="hero-section" id="heroSection">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span>✨</span> أهلاً بكم في واحة الطفولة النقية
+        </div>
+        <h1 class="hero-title">
+          حكايا <span class="highlight">الهدى</span>
+        </h1>
+        <p class="hero-slogan">
+          🌱 حكايات تُروى بحب، وقيمٌ تنمو مع كل حكاية
+        </p>
+        <p class="hero-description">
+          مساحة عائلية دافئة لقراءة القصص الإسلامية المصوّرة والاستماع إليها مع أطفالكم. نروي السيرة النبوية العطرة، وبطولات الصحابة الكرام، وغرس القيم والأخلاق الحميدة بأسلوب شيق ورسومات بهيجة تناسب براءة الصغار.
+        </p>
+        
+        <div class="hero-cta-group">
+          <a href="#storiesSection" class="btn-pill btn-primary">
+            <span>📚</span> ابدأ تصفح القصص
+          </a>
+          <button class="btn-pill btn-secondary" onclick="openAndPlayAudio('story-bird')">
+            <span>🎧</span> استمع لقصة نموذجية
+          </button>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-icon">📖</div>
+            <div class="stat-text">
+              <h4>قصص موثقة</h4>
+              <p>من مصادر تاريخية وسيرة صحيحة</p>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">🎨</div>
+            <div class="stat-text">
+              <h4>رسوم دافئة</h4>
+              <p>مصممة خصيصاً لأعين الأطفال</p>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">👨‍👩‍👧‍👦</div>
+            <div class="stat-text">
+              <h4>آمنة للأسرة</h4>
+              <p>بيئة هادفة خالية من أي محتوى مشتت</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-media-wrapper">
+          <img src="assets/images/hero-banner.jpg" alt="لوحة فنية لحكايا الهدى تحت ضوء القمر والنجوم">
+        </div>
+        <div class="hero-floating-card">
+          <div class="card-icon">🌙</div>
+          <div class="card-text">
+            <strong>قصص قبل النوم</strong>
+            <span>سكينة وأذكار لأحلام هادئة</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- أقسام القصص الرئيسية الأربعة -->
+  <section class="categories-section" id="categoriesSection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">أركان الحكاية</span>
+        <h2 class="section-title">أقسام حكايا الهدى الرئيسية</h2>
+        <p class="section-subtitle">اختر ركناً مفضلاً لتنتقل إلى باقة من القصص الهادفة المصممة برعاية وحب</p>
+      </div>
+
+      <div class="categories-grid">
+        <!-- قسم السيرة النبوية -->
+        <div class="category-card" data-category="seerah">
+          <div class="category-icon-box">🕌</div>
+          <h3 class="category-name">السيرة النبوية</h3>
+          <p class="category-desc">مواقف من حياة الحبيب المصطفى ﷺ ورحمته ولطفه مع الصغار والحيوان.</p>
+          <span class="category-count">حكايات عطرة</span>
+        </div>
+
+        <!-- قسم قصص الصحابة -->
+        <div class="category-card" data-category="sahabah">
+          <div class="category-icon-box">🛡️</div>
+          <h3 class="category-name">قصص الصحابة</h3>
+          <p class="category-desc">بطولات ووفاء وتضحيات أصحاب رسول الله رضي الله عنهم بأسلوب يلهم الأجيال.</p>
+          <span class="category-count">قدوات صالحة</span>
+        </div>
+
+        <!-- قسم أخلاق وقيم إسلامية -->
+        <div class="category-card" data-category="values">
+          <div class="category-icon-box">🌱</div>
+          <h3 class="category-name">أخلاق وقيم إسلامية</h3>
+          <p class="category-desc">حكايات ترسخ الصدق، والأمانة، وبر الوالدين، والإحسان للآخرين بطريقة محببة.</p>
+          <span class="category-count">بذور الفضيلة</span>
+        </div>
+
+        <!-- قسم حكايات قبل النوم -->
+        <div class="category-card" data-category="bedtime">
+          <div class="category-icon-box">⭐</div>
+          <h3 class="category-name">حكايات قبل النوم</h3>
+          <p class="category-desc">قصص هادئة ولطيفة تصحب الطفل بآداب وأذكار المساء نحو نوم مريح وهانئ.</p>
+          <span class="category-count">أحلام مطمئنة</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم مكتبة القصص وشريط البحث والتصفية -->
+  <section class="stories-section" id="storiesSection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">مكتبتنا المصوّرة</span>
+        <h2 class="section-title">استكشف قصص حكايا الهدى</h2>
+        <p class="section-subtitle">اقرأ الحكاية المصوّرة أو استمع إليها بالتسجيل الصوتي العذب</p>
+      </div>
+
+      <!-- شريط التحكم والتصفية والبحث التفاعلي -->
+      <div class="stories-control-bar">
+        <!-- حقل البحث باللغة العربية -->
+        <div class="search-box-wrapper">
+          <span class="search-icon">🔍</span>
+          <input 
+            type="text" 
+            id="storySearchInput" 
+            class="search-input" 
+            placeholder="ابحث عن قصة، خلق، أو صحابي..." 
+            aria-label="ابحث عن قصة">
+        </div>
+
+        <!-- أزرار التصنيفات -->
+        <div class="filter-pills-group">
+          <button class="filter-pill-btn active" data-category="all">جميع القصص</button>
+          <button class="filter-pill-btn" data-category="seerah">السيرة النبوية</button>
+          <button class="filter-pill-btn" data-category="sahabah">قصص الصحابة</button>
+          <button class="filter-pill-btn" data-category="values">أخلاق وقيم</button>
+          <button class="filter-pill-btn" data-category="bedtime">قبل النوم</button>
+        </div>
+
+        <!-- مفتاح تصفية القصص الصوتية -->
+        <label class="audio-filter-toggle" title="عرض القصص التي تحتوي على تسجيل صوتي فقط">
+          <input type="checkbox" id="audioFilterCheckbox">
+          <span>🎧 قصص صوتية فقط</span>
+        </label>
+      </div>
+
+      <!-- شبكة بطاقات القصص الديناميكية -->
+      <div class="stories-grid" id="storiesContainer">
+        <!-- يتم توليد البطاقات ديناميكياً بواسطة JavaScript بناءً على معايير البحث والتوفر الفعلي للملفات الصوتية -->
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم قصة اليوم المميزة -->
+  <section class="container" id="featuredSection">
+    <div class="featured-section">
+      <div class="featured-grid">
+        <div class="featured-text-box">
+          <div class="featured-badge">🌟 قصة اليوم المختارة</div>
+          <h2 class="featured-title">أبو عُمَيْر والنُّغَيْر: درس الرحمة النبوية بالصغار</h2>
+          <p class="featured-quote">
+            «يا أبا عُمَيْر، ما فَعَلَ النُّغَيْر؟» كلمات مباركة من خير البرية ﷺ تفيض بالحب ومواساة قلوب الأطفال والتلطف معهم.
+          </p>
+          <div class="featured-actions">
+            <button class="btn-pill btn-primary" onclick="openStoryReadingModal('story-bird')">
+              <span>📖</span> اقرأ القصة كاملة
+            </button>
+            <button class="btn-pill btn-listen-story" onclick="openAndPlayAudio('story-bird')">
+              <span>🎧</span> استمع للتسجيل الصوتي
+            </button>
+          </div>
+        </div>
+        <div class="featured-image-box">
+          <img src="assets/images/story-bird.jpg" alt="رسمة عصفور أبي عمير في بستان المدينة">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم قيم وأهداف حكايا الهدى -->
+  <section class="values-section" id="valuesSection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">رسالتنا للأسرة المسلمة</span>
+        <h2 class="section-title">لماذا «حكايا الهدى»؟</h2>
+        <p class="section-subtitle">نعتني بكل حرف وصورة لنقدم لأطفالكم غذاء الروح والعقل بأمان واطمئنان</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="value-card">
+          <div class="value-icon">📜</div>
+          <h3 class="value-title">أصالة وتوثيق</h3>
+          <p class="value-desc">نعتمد في جميع حكاياتنا على الأحاديث الصحيحة الثابتة ووقائع السيرة النبوية وتاريخ الصحابة الموثق دون اختلاق أحداث غير حقيقية.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">🕊️</div>
+          <h3 class="value-title">لغة عربية سليمة</h3>
+          <p class="value-desc">صيغت القصص بلغة عربية فصيحة، بسيطة وعذبة، تعزز سلامة اللسان وحب اللغة العربية في قلوب ناشئتنا.</p>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon">💖</div>
+          <h3 class="value-title">غرس القيم التربوية</h3>
+          <p class="value-desc">تنتهي كل قصة بخلاصة تربوية تركز على القيمة المستفادة والفضيلة الأخلاقية، لتسهل على الوالدين مناقشتها مع الطفل.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- تذييل الصفحة (Footer) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="شعار حكايا الهدى" class="brand-logo-img">
+          <p>
+            حكايا الهدى: منصة عائلية لقراءة وسماع القصص الإسلامية المصورة للأطفال وأولياء أمورهم، تهدف إلى إحياء السيرة النبوية وبناء أجيال تقتدي بالصحابة الكرام.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>أقسام القصص</h4>
+          <ul>
+            <li><a href="#storiesSection" onclick="filterByCategory('seerah')">السيرة النبوية</a></li>
+            <li><a href="#storiesSection" onclick="filterByCategory('sahabah')">قصص الصحابة</a></li>
+            <li><a href="#storiesSection" onclick="filterByCategory('values')">أخلاق وقيم إسلامية</a></li>
+            <li><a href="#storiesSection" onclick="filterByCategory('bedtime')">حكايات قبل النوم</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#heroSection">الرئيسية</a></li>
+            <li><a href="#categoriesSection">أقسام الموقع</a></li>
+            <li><a href="#featuredSection">قصة اليوم</a></li>
+            <li><a href="#valuesSection">عن حكايا الهدى</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>لأولياء الأمور</h4>
+          <ul>
+            <li><a href="#valuesSection">منهج التوثيق والأصالة</a></li>
+            <li><a href="#storiesSection">القصص الصوتية</a></li>
+            <li><a href="#valuesSection">نصائح القراءة المشتركة</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>جميع الحقوق محفوظة © حكايا الهدى ٢٠٢٦ - حكايات تُروى بحب وقيمٌ تنمو مع كل حكاية</p>
+        <p>موقع عربي إسلامي مخصص للأسرة والطفل 🌿</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       نافذة قراءة القصة المنبثقة (Reading Modal View)
+       ========================================================================== -->
+  <div class="modal-overlay" id="readingModalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalStoryTitle">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <span class="modal-category-tag" id="modalCategoryTag">القسم</span>
+        </div>
+        <div class="modal-controls">
+          <button class="btn-font-size" id="btnFontZoomIn" title="تكبير الخط" aria-label="تكبير الخط">أ+</button>
+          <button class="btn-font-size" id="btnFontZoomOut" title="تصغير الخط" aria-label="تصغير الخط">أ-</button>
+          <button class="btn-close-modal" id="btnCloseReadingModal" title="إغلاق القصة" aria-label="إغلاق">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-body" id="modalStoryBody">
+        <img src="" alt="" id="modalStoryImage" class="modal-hero-image">
+        <h2 class="modal-story-title" id="modalStoryTitle">عنوان القصة</h2>
+        <div class="modal-story-text" id="modalStoryText">
+          نص القصة...
+        </div>
+
+        <!-- صندوق الفائدة والقيمة المستفادة -->
+        <div class="moral-box">
+          <div class="moral-icon">💡</div>
+          <div class="moral-content">
+            <h4>القيمة والفضيلة المستفادة:</h4>
+            <p id="modalStoryMoral">القيمة المستفادة...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <div id="modalAudioActionContainer">
+          <!-- يظهر زر الاستماع هنا ديناميكياً إن توفر ملف صوتي -->
+        </div>
+        <button class="btn-pill btn-secondary" id="btnCloseReadingModalFooter">
+          إغلاق الحكاية
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       مشغل القراءة الصوتية الذكي للقصص (Smart Text-to-Speech Player)
+       يعتمد على Web Speech API لقراءة النص العربي للقصة المحددة
+       ========================================================================== -->
+  <div class="audio-player-modal" id="audioPlayerModal" role="region" aria-label="مشغل القراءة الصوتية للقصة">
+    <!-- رأس المشغل: العنوان وحالة الصوت وزر الإغلاق -->
+    <div class="audio-player-header">
+      <div class="audio-player-title-info">
+        <div class="audio-animated-waves" id="audioAnimatedWaves" aria-hidden="true">
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+          <div class="wave-bar"></div>
+        </div>
+        <div class="audio-title-column">
+          <span class="audio-player-tag">🎙️ قراءة صوتية ذكية للقصة</span>
+          <span class="audio-title-text" id="audioPlayerStoryTitle">اسم القصة</span>
+        </div>
+      </div>
+      <button class="btn-close-modal" id="btnCloseAudioPlayer" title="إغلاق المشغل وإيقاف الصوت" aria-label="إغلاق المشغل">✕</button>
+    </div>
+
+    <!-- مؤشر حالة القراءة واسم الصوت المستخدم -->
+    <div class="speech-status-bar" id="speechStatusBar">
+      <span class="speech-status-badge" id="speechStatusBadge">جاهز للقراءة</span>
+      <span class="speech-voice-name" id="speechVoiceName">جاري التعرف على الصوت العربي...</span>
+    </div>
+
+    <!-- شريط تقدم القراءة (حسب فقرات وجمل القصة) -->
+    <div class="speech-progress-wrap">
+      <div class="speech-progress-track">
+        <div class="speech-progress-fill" id="speechProgressFill" style="width: 0%;"></div>
+      </div>
+      <div class="speech-progress-labels">
+        <span id="speechCurrentPart">الفقرة: ١ من ٥</span>
+        <span id="speechProgressPercent">٠%</span>
+      </div>
+    </div>
+
+    <!-- أزرار التحكم الرئيسية في القراءة -->
+    <div class="speech-controls-main">
+      <!-- زر التشغيل / الاستكمال -->
+      <button class="btn-speech-action btn-speech-play" id="btnSpeechPlay" title="تشغيل القراءة أو استكمالها">
+        <span class="btn-icon">▶️</span>
+        <span class="btn-label" id="btnSpeechPlayLabel">تشغيل</span>
+      </button>
+
+      <!-- زر الإيقاف المؤقت -->
+      <button class="btn-speech-action btn-speech-pause" id="btnSpeechPause" title="إيقاف مؤقت للقراءة">
+        <span class="btn-icon">⏸️</span>
+        <span class="btn-label">إيقاف مؤقت</span>
+      </button>
+
+      <!-- زر إعادة البدء من أول القصة -->
+      <button class="btn-speech-action btn-speech-restart" id="btnSpeechRestart" title="إعادة القراءة من بداية القصة">
+        <span class="btn-icon">🔄</span>
+        <span class="btn-label">من البداية</span>
+      </button>
+
+      <!-- زر الإيقاف التام -->
+      <button class="btn-speech-action btn-speech-stop" id="btnSpeechStop" title="إيقاف تام للقراءة">
+        <span class="btn-icon">⏹️</span>
+        <span class="btn-label">إيقاف</span>
+      </button>
+    </div>
+
+    <!-- أدوات ضبط مستوى الصوت وسرعة القراءة -->
+    <div class="speech-settings-row">
+      <!-- التحكم بسرعة القراءة -->
+      <div class="setting-item">
+        <label for="speechRateRange" class="setting-label">
+          <span>⏱️ السرعة:</span>
+          <span class="setting-value" id="speechRateValue">٠.٩×</span>
+        </label>
+        <input 
+          type="range" 
+          id="speechRateRange" 
+          class="setting-slider" 
+          min="0.5" 
+          max="1.5" 
+          step="0.1" 
+          value="0.9" 
+          aria-label="التحكم بسرعة القراءة">
+      </div>
+
+      <!-- التحكم بمستوى الصوت -->
+      <div class="setting-item">
+        <label for="speechVolumeRange" class="setting-label">
+          <span>🔊 مستوى الصوت:</span>
+          <span class="setting-value" id="speechVolumeValue">١٠٠%</span>
+        </label>
+        <input 
+          type="range" 
+          id="speechVolumeRange" 
+          class="setting-slider" 
+          min="0" 
+          max="1" 
+          step="0.05" 
+          value="1" 
+          aria-label="التحكم بمستوى الصوت">
+      </div>
+    </div>
+  </div>
+
+  <!-- ربط ملف الجافاسكريبت -->
+  <script src="js/main.js"></script>
+</body>
+</html>
